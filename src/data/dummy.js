@@ -1,6 +1,6 @@
 import React from 'react';
 import { AiOutlineCalendar, AiOutlineShoppingCart, AiOutlineAreaChart, AiOutlineBarChart, AiOutlineStock } from 'react-icons/ai';
-import { FiShoppingBag, FiGrid, FiEdit, FiPieChart, FiBarChart, FiCreditCard, FiStar, FiShoppingCart } from 'react-icons/fi';
+import { FiShoppingBag, FiSmile, FiGrid, FiEdit, FiPieChart, FiBarChart, FiCreditCard, FiStar, FiShoppingCart } from 'react-icons/fi';
 import { BsKanban, BsBarChart, BsBoxSeam, BsCurrencyDollar, BsShield, BsChatLeft } from 'react-icons/bs';
 import { BiColorFill } from 'react-icons/bi';
 import { IoMdContacts } from 'react-icons/io';
@@ -242,19 +242,19 @@ export const areaCustomSeries = [
 
 export const barChartData = [
   [
-    { x: 'USA', y: 46 },
-    { x: 'GBR', y: 27 },
-    { x: 'CHN', y: 26 },
+    { x: 'IP', y: 46 },
+    { x: 'ADSA', y: 27 },
+    { x: 'EEB', y: 26 },
   ],
   [
-    { x: 'USA', y: 37 },
-    { x: 'GBR', y: 23 },
-    { x: 'CHN', y: 18 },
+    { x: 'IP', y: 37 },
+    { x: 'ADSA', y: 23 },
+    { x: 'EEB', y: 18 },
   ],
   [
-    { x: 'USA', y: 38 },
-    { x: 'GBR', y: 17 },
-    { x: 'CHN', y: 26 },
+    { x: 'IP', y: 38 },
+    { x: 'ADSA', y: 17 },
+    { x: 'EEB', y: 26 },
   ],
 ];
 
@@ -263,7 +263,7 @@ export const barCustomSeries = [
     dataSource: barChartData[0],
     xName: 'x',
     yName: 'y',
-    name: 'Gold',
+    name: 'Dishant',
     type: 'Column',
     marker: {
       dataLabel: {
@@ -277,7 +277,7 @@ export const barCustomSeries = [
     dataSource: barChartData[1],
     xName: 'x',
     yName: 'y',
-    name: 'Silver',
+    name: 'Aniket',
     type: 'Column',
     marker: {
       dataLabel: {
@@ -291,7 +291,7 @@ export const barCustomSeries = [
     dataSource: barChartData[2],
     xName: 'x',
     yName: 'y',
-    name: 'Bronze',
+    name: 'Erica',
     type: 'Column',
     marker: {
       dataLabel: {
@@ -317,23 +317,22 @@ export const colorMappingData = [
     { x: 'Nov', y: 15.5 },
     { x: 'Dec', y: 9.9 },
   ],
-  ['#FFFF99'],
+  ['#FF4040'],
   ['#FFA500'],
   ['#FF4040'],
 ];
 
 export const rangeColorMapping = [
-  { label: '1°C to 10°C',
-    start: '1',
+  { label: '1 to 10' ,
     end: '10',
     colors: colorMappingData[1] },
 
-  { label: '11°C to 20°C',
+  { label: '11 to 20',
     start: '11',
     end: '20',
     colors: colorMappingData[2] },
 
-  { label: '21°C to 30°C',
+  { label: '21 to 30',
     start: '21',
     end: '30',
     colors: colorMappingData[3] },
@@ -350,8 +349,8 @@ export const ColorMappingPrimaryYAxis = {
   lineStyle: { width: 0 },
   majorTickLines: { width: 0 },
   minorTickLines: { width: 0 },
-  labelFormat: '{value}°C',
-  title: 'Temperature',
+  labelFormat: '{value}',
+  title: 'Students',
 };
 
 export const FinancialPrimaryXAxis = {
@@ -484,7 +483,7 @@ export const links = [
     title: 'Charts',
     links: [
       {
-        name: 'line',
+        name: 'Grades',
         icon: <AiOutlineStock />,
       },
       {
@@ -493,23 +492,23 @@ export const links = [
       },
 
       {
-        name: 'bar',
+        name: 'Compare-Grades',
         icon: <AiOutlineBarChart />,
       },
       {
-        name: 'pie',
+        name: 'Course-Categories',
         icon: <FiPieChart />,
       },
       {
-        name: 'color-mapping',
+        name: 'Submission',
         icon: <BsBarChart />,
       },
       {
-        name: 'pyramid',
+        name: 'Top-Resources',
         icon: <GiLouvrePyramid />,
       },
       {
-        name: 'stacked',
+        name: 'User-Activity',
         icon: <AiOutlineBarChart />,
       },
     ],
@@ -662,28 +661,28 @@ export const recentTransactions = [
   },
 ];
 
-export const weeklyStats = [
+export const studentAverageScore = [
   {
-    icon: <FiShoppingCart />,
-    amount: '-$560',
-    title: 'Top Sales',
-    desc: 'Johnathan Doe',
+    icon: <FiSmile />,
+    amount: '9.5',
+    title: 'Dishant Wakalkar',
+    desc: 'TE-IT',
     iconBg: '#FB9678',
     pcColor: 'red-600',
   },
   {
-    icon: <FiStar />,
-    amount: '-$560',
-    title: 'Best Seller',
-    desc: 'MaterialPro Admin',
+    icon: <FiSmile />,
+    amount: '9.25',
+    title: 'Aniket Yadav',
+    desc: 'TE-IT',
     iconBg: 'rgb(254, 201, 15)',
     pcColor: 'red-600',
   },
   {
-    icon: <BsChatLeft />,
-    amount: '+$560',
-    title: 'Most Commented',
-    desc: 'Ample Admin',
+    icon: <FiSmile />,
+    amount: '9',
+    title: 'Erica DSouza',
+    desc: 'TE-IT',
     iconBg: '#00C292',
     pcColor: 'green-600',
   },
@@ -3053,7 +3052,7 @@ export const lineCustomSeries = [
   { dataSource: lineChartData[0],
     xName: 'x',
     yName: 'y',
-    name: 'Germany',
+    name: 'Aniket',
     width: '2',
     marker: { visible: true, width: 10, height: 10 },
     type: 'Line' },
@@ -3061,7 +3060,7 @@ export const lineCustomSeries = [
   { dataSource: lineChartData[1],
     xName: 'x',
     yName: 'y',
-    name: 'England',
+    name: 'Erica',
     width: '2',
     marker: { visible: true, width: 10, height: 10 },
     type: 'Line' },
@@ -3069,7 +3068,7 @@ export const lineCustomSeries = [
   { dataSource: lineChartData[2],
     xName: 'x',
     yName: 'y',
-    name: 'India',
+    name: 'Dishant',
     width: '2',
     marker: { visible: true, width: 10, height: 10 },
     type: 'Line' },
@@ -3077,13 +3076,13 @@ export const lineCustomSeries = [
 ];
 
 export const pieChartData = [
-  { x: 'Labour', y: 18, text: '18%' },
-  { x: 'Legal', y: 8, text: '8%' },
-  { x: 'Production', y: 15, text: '15%' },
-  { x: 'License', y: 11, text: '11%' },
-  { x: 'Facilities', y: 18, text: '18%' },
-  { x: 'Taxes', y: 14, text: '14%' },
-  { x: 'Insurance', y: 16, text: '16%' },
+  { x: 'First Year Engineering', y: 18, text: '18%' },    
+  { x: 'Electronics and Telecommunication', y: 8, text: '8%' },
+  { x: 'Computer Engineering', y: 15, text: '15%' },
+  { x: 'Information Technology', y: 11, text: '11%' },
+  { x: 'Mechanical Engineering', y: 18, text: '18%' },
+  { x: 'Mechanical Engineering', y: 14, text: '14%' },
+  { x: 'Honors and Minors Courses ', y: 16, text: '16%' },
 ];
 
 export const contextMenuItems = [
@@ -3138,7 +3137,7 @@ export const stackedCustomSeries = [
   { dataSource: stackedChartData[0],
     xName: 'x',
     yName: 'y',
-    name: 'Budget',
+    name: 'Total Users',
     type: 'StackingColumn',
     background: 'blue',
 
@@ -3147,7 +3146,7 @@ export const stackedCustomSeries = [
   { dataSource: stackedChartData[1],
     xName: 'x',
     yName: 'y',
-    name: 'Expense',
+    name: 'Active Users',
     type: 'StackingColumn',
     background: 'red',
 
